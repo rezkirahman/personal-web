@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .section {
+        @apply py-8 lg:py-24 lg:h-screen flex items-center;
+    }
+    .active {
+        background: #CDE9AB;
+    }
+    
+}
+
+@layer components{
+    .btn-sm-primary{
+        @apply py-4 px-6 text-sm font-bold bg-primary100 hover:bg-primary200 rounded-full text-slate-800
+    }
+    .btn-lg-primary{
+        @apply py-4 px-10 text-base font-bold bg-primary100 hover:bg-primary200 rounded-full text-slate-800
+    }
+}
